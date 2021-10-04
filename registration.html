@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <title>Register</title>
+    <style>
+        main{
+            display: flex;
+            justify-content: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            box-shadow: 0 10px 20px;
+            border-radius: 2rem;
+            width: 25rem;
+            height: 30rem;
+        }
+        legend{
+            padding: 1rem 0;
+            font-size: 1.3rem;
+            font-weight: bolder;
+            font-family: 'Roboto Mono' ,  sans-serif ;
+            color: rgb(219, 66, 39);
+        }
+        label{
+            font-family: 'Roboto Mono' ,  sans-serif ;
+        }
+        input{
+            padding: 0.5rem;
+            margin: 0.4rem 0 1rem 0;
+            width: 200px;
+            text-align: center;
+            border-radius: 0.5rem;
+            border: 1px solid black;
+            box-shadow: 2px 2px 1px gray;
+            transition: transform 1s ease-in-out;
+        }
+       input:focus{
+           transform: scale(1.1);
+           outline: none;
+       }
+        button{
+            width: 5.5rem;
+            height: 2rem;
+            padding: 0.2rem 0.5rem;
+            background-color: rgb(34, 108, 194);
+            border-radius: 0.2rem;
+            border: 1px solid rgb(34, 108, 194);
+            color: whitesmoke;
+            /* box-shadow: 0 10px 20px black; */
+            box-shadow: 3px 5px 2px rgb(88, 83, 83);
+        }
+        a{
+            position: relative;
+            text-decoration: none;
+            top: 1.2rem;
+        }
+        a:hover{
+            cursor: pointer;
+            color: rgb(0, 128, 68);
+
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <main>
+        <form>
+            <legend>Registration Form</legend>
+            <label for="fname">FirstName </label>
+            <input type="text" name="fname" id="fname" placeholder="your first name" required>
+           
+
+            <label for="lname">LastName </label>
+            <input type="text" name="lname" id="lname" placeholder="your last name" required>
+           
+
+            <label for="mail">Email  </label>
+            <input type="email" name="emial" id="mail" placeholder="abc@example.com" required>
+          
+            <label for="number">Phone </label>
+            <input type="tel" name="phone" id="number" placeholder="your contact number" required>
+       
+           
+            <button type="submit" id="register">Register</button>
+             
+            <a href="#">Know more</a>
+         
+       
+        
+        
+        </form>
+    </main>
+</body>
+</html>
